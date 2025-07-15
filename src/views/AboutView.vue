@@ -11,7 +11,7 @@
           <img
             src="@/assets/myProfilePix.jpg"
             alt="Your Name - Web Developer"
-            class="rounded-full w-48 h-48 md:w-72 md:h-72 object-cover transform transition-transform duration-300 hover:scale-105"
+            class="rounded-full w-48 h-48 md:w-72 md:h-72 object-cover transform transition-transform duration-300 hover:scale-105" loading="lazy"
           />
         </div>
 

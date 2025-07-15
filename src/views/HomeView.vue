@@ -2,7 +2,7 @@
   <section class="hero-section py-20 md:py-32 text-center animate-fade-in">
     <div class="container pt-12 md:pt-0 mx-auto px-6 max-w-3xl">
       <div class="mb-8">
-        <img src="@/assets/myProfilePix.jpg" alt="profile picture" class="w-32 h-32 rounded-full mx-auto object-cover border-2 border-lemon-green-500 shadow-lg" />
+        <img src="@/assets/myProfilePix.jpg" alt="profile picture" class="w-32 h-32 rounded-full mx-auto object-cover border-2 border-lemon-green-500 shadow-lg" loading="lazy"/>
       </div>
       <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
         Hi, I'm <span class="text-lemon-green-500">Edmund Obinna</span>.

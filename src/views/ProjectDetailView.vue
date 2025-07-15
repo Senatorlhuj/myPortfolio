@@ -9,7 +9,7 @@
         <h1 class="text-4xl font-extrabold text-gray-50 mb-4">{{ project.title }}</h1>
         <p class="text-light-grey text-lg mb-6">{{ project.description }}</p>
 
-        <img :src="project.fullImage || project.image" :alt="project.title" class="w-full md:w-3/4 lg:w-2/3 h-auto mx-auto rounded-lg mb-8 shadow-md object-cover" />
+        <img :src="project.fullImage || project.image" :alt="project.title" class="w-full md:w-3/4 lg:w-2/3 h-auto mx-auto rounded-lg mb-8 shadow-md object-cover" loading="lazy" />
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-light-grey">
           <div>

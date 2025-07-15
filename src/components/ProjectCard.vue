@@ -7,6 +7,7 @@
       :src="project.image"
       :alt="project.title"
       class="w-full h-auto object-cover rounded-t-lg"
+      loading="lazy"
     />
     <div class="p-6">
       <h3 class="text-xl font-bold text-gray-50 mb-2">{{ project.title }}</h3>
@@ -34,7 +35,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'; // Explicitly import defineProps
+import { defineProps } from 'vue'; 
 
 defineProps({
   project: Object,
