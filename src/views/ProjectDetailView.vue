@@ -135,7 +135,7 @@ const allProjects = [
     challenges: 'Optimizing image loading and ensuring consistent animations across different browsers were minor challenges. Achieved a highly performant and accessible site.',
     results: 'A highly performant personal website that effectively showcases my projects and skills.',
     liveUrl: 'https://yourportfolio.com',
-    githubUrl: 'https://github.com/yourprofile/your-portfolio-repo',
+    githubUrl: 'https://github.com/Senatorlhuj/myPortfolio',
   },
 ];
 
