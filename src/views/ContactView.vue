@@ -39,7 +39,7 @@
               @blur="validateField('name')"
               :class="{ 'border-red-500': formErrors.name }"
               class="w-full px-5 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-lemon-green-500 focus:border-lemon-green-500 bg-gray-800 text-gray-50 placeholder-gray-400 outline-none transition-all duration-200 ease-in-out shadow-sm"
-              placeholder="Your Name"
+              placeholder="Enter your full name "
             />
             <p v-if="formErrors.name" class="text-red-500 text-sm mt-1">
               {{ formErrors.name }}
@@ -59,7 +59,7 @@
               @blur="validateField('email')"
               :class="{ 'border-red-500': formErrors.email }"
               class="w-full px-5 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-lemon-green-500 focus:border-lemon-green-500 bg-gray-800 text-gray-50 placeholder-gray-400 outline-none transition-all duration-200 ease-in-out shadow-sm"
-              placeholder="your.email@example.com"
+              placeholder="Enter your email address"
             />
             <p v-if="formErrors.email" class="text-red-500 text-sm mt-1">
               {{ formErrors.email }}
@@ -233,7 +233,7 @@ const socialLinks = reactive([
 ]);
 
 const validateField = (field) => {
-  formErrors[field] = ""; // Clear previous error for the field
+  formErrors[field] = ""; 
 
   switch (field) {
     case "name":
@@ -310,7 +310,7 @@ const submitForm = async () => {
       form.email = "";
       form.subject = "";
       form.message = "";
-      // Clear all errors after successful submission
+
       for (const field in formErrors) {
         formErrors[field] = "";
       }
