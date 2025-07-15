@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  @apply antialiased text-gray-50 bg-black;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tw-prose-invert-body) var(--tw-prose-body);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--tw-prose-body);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--tw-prose-invert-body);
+  border-radius: 4px;
+  border: 2px solid var(--tw-prose-body);
+}
+
+@theme {
+  --color-lemon-green-50: 247 255 186;
+  --color-lemon-green-100: 228 255 142;
+  --color-lemon-green-200: 201 255 93;
+  --color-lemon-green-300: 167 245 42;
+  --color-lemon-green-400: 128 220 28;
+  --color-lemon-green-500: 154 205 50;
+  --color-lemon-green-600: 123 180 40;
+  --color-lemon-green-700: 94 150 32;
+  --color-lemon-green-800: 68 115 24;
+  --color-lemon-green-900: 45 85 16;
+  --color-lemon-green-950: 30 55 10;
+
+  --color-black: 0 0 0;
+  --color-light-grey: 242 242 242;
+  --color-charcoal-grey: 74 74 74;
+
+  --color-gray-50: 249 250 251;
+  --color-gray-100: 243 244 246;
+  --color-gray-200: 229 231 235;
+  --color-gray-300: 209 213 219;
+  --color-gray-400: 156 163 175;
+  --color-gray-500: 107 114 128;
+  --color-gray-600: 75 85 99;
+  --color-gray-700: 55 65 81;
+  --color-gray-800: 39 39 42;
+  --color-gray-900: 23 23 25;
+  --color-gray-950: 10 10 10;
+
+  --color-accent-gold: 218 165 32;
+  --color-accent-teal: 0 128 128;
+
+  --color-primary-base: var(--color-lemon-green-500);
+  --color-primary-hover: var(--color-lemon-green-600);
+  --color-primary-text-on-light: var(--color-lemon-green-700);
+  --color-primary-light-bg: var(--color-lemon-green-100);
+
+  --color-text-primary: var(--color-gray-50);
+  --color-text-secondary: var(--color-charcoal-grey);
+  --color-text-heading: var(--color-gray-50);
+
+  --color-bg-dark: var(--color-black);
+  --color-bg-light: var(--color-light-grey);
+  --color-bg-card: var(--color-charcoal-grey);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Merriweather", ui-serif, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  --animation-fade-in: fadeIn 0.5s ease-out forwards;
+  --animation-slide-up: slideUp 0.5s ease-out forwards;
+}
+/* Custom utility classes */
+.text-lemon-green-50 {
+  color: rgb(var(--color-lemon-green-50));
+}
+.text-lemon-green-100 {
+  color: rgb(var(--color-lemon-green-100));
+}
+.text-lemon-green-200 {
+  color: rgb(var(--color-lemon-green-200));
+}
+.text-lemon-green-300 {
+  color: rgb(var(--color-lemon-green-300));
+}
+.text-lemon-green-400 {
+  color: rgb(var(--color-lemon-green-400));
+}
+.text-lemon-green-500 {
+  color: rgb(var(--color-lemon-green-500));
+}
+.text-lemon-green-600 {
+  color: rgb(var(--color-lemon-green-600));
+}
+.text-lemon-green-700 {
+  color: rgb(var(--color-lemon-green-700));
+}
+.text-lemon-green-800 {
+  color: rgb(var(--color-lemon-green-800));
+}
+.text-lemon-green-900 {
+  color: rgb(var(--color-lemon-green-900));
+}
+.text-lemon-green-950 {
+  color: rgb(var(--color-lemon-green-950));
+}
+
+.bg-lemon-green-50 {
+  background-color: rgb(var(--color-lemon-green-50));
+}
+.bg-lemon-green-100 {
+  background-color: rgb(var(--color-lemon-green-100));
+}
+.bg-lemon-green-200 {
+  background-color: rgb(var(--color-lemon-green-200));
+}
+.bg-lemon-green-300 {
+  background-color: rgb(var(--color-lemon-green-300));
+}
+.bg-lemon-green-400 {
+  background-color: rgb(var(--color-lemon-green-400));
+}
+.bg-lemon-green-500 {
+  background-color: rgb(var(--color-lemon-green-500));
+}
+.bg-lemon-green-600 {
+  background-color: rgb(var(--color-lemon-green-600));
+}
+.bg-lemon-green-700 {
+  background-color: rgb(var(--color-lemon-green-700));
+}
+.bg-lemon-green-800 {
+  background-color: rgb(var(--color-lemon-green-800));
+}
+.bg-lemon-green-900 {
+  background-color: rgb(var(--color-lemon-green-900));
+}
+.bg-lemon-green-950 {
+  background-color: rgb(var(--color-lemon-green-950));
+}
+
+.border-lemon-green-50 {
+  border-color: rgb(var(--color-lemon-green-50));
+}
+.border-lemon-green-100 {
+  border-color: rgb(var(--color-lemon-green-100));
+}
+.border-lemon-green-200 {
+  border-color: rgb(var(--color-lemon-green-200));
+}
+.border-lemon-green-300 {
+  border-color: rgb(var(--color-lemon-green-300));
+}
+.border-lemon-green-400 {
+  border-color: rgb(var(--color-lemon-green-400));
+}
+.border-lemon-green-500 {
+  border-color: rgb(var(--color-lemon-green-500));
+}
+.border-lemon-green-600 {
+  border-color: rgb(var(--color-lemon-green-600));
+}
+.border-lemon-green-700 {
+  border-color: rgb(var(--color-lemon-green-700));
+}
+.border-lemon-green-800 {
+  border-color: rgb(var(--color-lemon-green-800));
+}
+.border-lemon-green-900 {
+  border-color: rgb(var(--color-lemon-green-900));
+}
+.border-lemon-green-950 {
+  border-color: rgb(var(--color-lemon-green-950));
+}
+
+.text-accent-gold {
+  color: rgb(var(--color-accent-gold));
+}
+.bg-accent-gold {
+  background-color: rgb(var(--color-accent-gold));
+}
+.border-accent-gold {
+  border-color: rgb(var(--color-accent-gold));
+}
+
+.text-accent-teal {
+  color: rgb(var(--color-accent-teal));
+}
+.bg-accent-teal {
+  background-color: rgb(var(--color-accent-teal));
+}
+.border-accent-teal {
+  border-color: rgb(var(--color-accent-teal));
+}
+
+.animate-fade-in {
+  animation: var(--animation-fade-in);
+}
+.animate-slide-up {
+  animation: var(--animation-slide-up);
+}
+body {
+  scrollbar-color: var(--color-lemon-green-500) var(--color-bg-dark);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-lemon-green-500);
+  border: 2px solid var(--color-bg-dark);
+}
+body::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+@tailwind utilities;
