@@ -1,6 +1,6 @@
 <template>
   <section class="project-detail-section py-16 md:py-24 animate-slide-up">
-    <div class="container mx-auto px-6 max-w-5xl">
+    <div class="container mt-8 md:mt-0 mx-auto px-6 max-w-5xl">
       <router-link to="/portfolio" class="inline-flex items-center text-lemon-green-500 hover:underline mb-8">
         <font-awesome-icon :icon="['fas', 'arrow-left']" class="mr-2" /> Back to Portfolio
       </router-link>
