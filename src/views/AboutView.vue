@@ -9,9 +9,9 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         <div class="lg:col-span-1 flex justify-center lg:justify-start">
           <img
-            src=""
+            src="@/assets/myProfilePix.jpg"
             alt="Your Name - Web Developer"
-            class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover shadow-lg border-4 border-lemon-green-500 transform transition-transform duration-300 hover:scale-105"
+            class="rounded-full w-48 h-48 md:w-72 md:h-72 object-cover transform transition-transform duration-300 hover:scale-105"
           />
         </div>
 
